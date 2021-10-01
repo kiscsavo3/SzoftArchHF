@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Hexagonfield.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hexagonfield"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ItemsControl ItemsSource="{Binding MyPoints}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button>
+                        <Polygon Fill="Red" Points="{Binding}"></Polygon>
+                    </Button>
+                    <!--az a gond, hogy ez a szaros ilyen külön teszi az összes pontot, ha ezt meg tudnánk valahogy szüntetni, akkor fasza lenne-->
+
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+
+        </ItemsControl>
+    </Grid>
+    
+</Page>
