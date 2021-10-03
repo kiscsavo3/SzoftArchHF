@@ -9,18 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ItemsControl ItemsSource="{Binding MyPoints}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Button>
-                        <Polygon Fill="Red" Points="{Binding}"></Polygon>
-                    </Button>
-                    <!--az a gond, hogy ez a szaros ilyen külön teszi az összes pontot, ha ezt meg tudnánk valahogy szüntetni, akkor fasza lenne-->
-
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-
-        </ItemsControl>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Click="Button_Click">Színezd a középső körülit pirosra :|</Button>
+        <Button Grid.Row="0" Grid.Column="1" Click="Button_Click_1">Újra</Button>
+        <Canvas x:Name="DrawCanvas" Grid.Row="1"></Canvas>
     </Grid>
     
 </Page>
