@@ -7,7 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -17,9 +16,16 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Click="Button_Click">Színezd a középső körülit pirosra :|</Button>
-        <Button Grid.Row="0" Grid.Column="1" Click="Button_Click_1">Újra</Button>
+        <StackPanel x:Name="ColorPanel" Grid.Row="0" Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="Rectangle">
+                    <Setter Property="Margin" Value="10,10,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Your Turn:</TextBlock>
+        </StackPanel>
         <Canvas x:Name="DrawCanvas" Grid.Row="1"></Canvas>
+        <Button Margin="10,0,0,0" Grid.Row="2" Grid.Column="0" Click="Button_Click_1">Újra</Button>        
     </Grid>
     
 </Page>

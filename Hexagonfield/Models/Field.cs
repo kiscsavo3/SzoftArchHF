@@ -11,6 +11,19 @@ namespace Hexagonfield.Models
 {
     public class Field
     {
+        private bool isMarked = false;
+        public bool IsMarked
+        {
+            get
+            {
+                return isMarked;
+            }
+            set
+            {
+                isMarked = value;                
+                
+            }
+        }
         private int coordX;
         private int coordY;
         public int CoordX { get; set; }
@@ -29,6 +42,14 @@ namespace Hexagonfield.Models
                 color = value;
                 Polygon.Fill = new SolidColorBrush(value);
             }
+        }
+        public void Mark()
+        {
+            IsMarked = true;
+        }
+        public void UnMark()
+        {
+            IsMarked = true;
         }
     }
 }

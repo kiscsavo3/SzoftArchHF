@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Shapes;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -27,13 +28,16 @@ namespace Hexagonfield
         public int Width { get; set; } = 40;
         public int Height { get; set; } = 36;
         public int Size { get; set; } = 5;
-        public List<Color> ColorList { get; set; } = new List<Color>() { Colors.Red, Colors.Blue , Colors.Green };// , Colors.Yellow, Colors.Orange, Colors.White };
+        public List<Color> ColorList { get; set; } = new List<Color>() { Colors.Red, Colors.Blue , Colors.Green, Colors.Orange, Colors.Purple };
         public List<Models.Field> Fields { get; set; } = new List<Models.Field>();
         public List<Models.Field> VisitedFields { get; set; } = new List<Models.Field>();
         public MainPage()
         {
             this.InitializeComponent();
+            CreateColorButtons();
             CreateHexagons();
+
+            MarkStartField(0, 0);
         }
         public void CreateHexagons()
         {
@@ -58,18 +62,47 @@ namespace Hexagonfield
                     DrawCanvas.Children.Add(NewField.Polygon);
                     Fields.Add(NewField);
                 }
+            }            
+        }
+        public void MarkStartField(int CoordX, int CoordY)
+        {
+            Fields.Find(f => f.CoordX == CoordX && f.CoordY == CoordY).Mark();
+        }
+        public void UnMarkStartField(int CoordX, int CoordY)
+        {
+            Fields.Find(f => f.CoordX == CoordX && f.CoordY == CoordY).UnMark();
+        }
+        public void CreateColorButtons()
+        {
+            foreach (var color in ColorList)
+            {              
+                Rectangle rectangle = new Rectangle() { Width = 25, Height = 25, Fill = new SolidColorBrush(color) };
+                rectangle.Tapped += Rectangle_Tapped;
+                ColorPanel.Children.Add(rectangle);
             }
         }
+
+        private void Rectangle_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Rectangle rectangle = (Rectangle)sender;
+            ChangeColor(0, 0, (rectangle.Fill as SolidColorBrush).Color);
+            VisitedFields = new List<Models.Field>();
+        }
+
         public Color PickRandomColor(int NumberOfColors = 5)
         {
             Random rnd = new Random();
             var idx = rnd.Next(0, Math.Min(ColorList.Count, NumberOfColors));
             return ColorList[idx];
         }
-        public void ChangeColor(int StartCoordX, int StartCoordY, Color NewColor, Object OldColor = null)
+        public void ChangeColor(int StartCoordX, int StartCoordY, Color NewColor)
+        {
+            Color OldColor = Fields.Find(f => f.CoordX == StartCoordX && f.CoordY == StartCoordY).Color;
+            ChangeColor(StartCoordX, StartCoordY, NewColor, OldColor);
+        }
+        private void ChangeColor(int StartCoordX, int StartCoordY, Color NewColor, Color OldColor)
         {
             Models.Field StartField = Fields.Find(f => f.CoordX == StartCoordX && f.CoordY == StartCoordY);
-            if(OldColor == null) OldColor = Fields.Find(f => f.CoordX == StartCoordX && f.CoordY == StartCoordY).Color;
             StartField.Color = NewColor;
             VisitedFields.Add(StartField);
             var ColorableNeighbours = Fields.FindAll(f => Math.Abs(f.CoordX + f.CoordY - StartCoordX - StartCoordY) <= 1 && Math.Abs(f.CoordX - StartCoordX) <= 1 && Math.Abs(f.CoordY - StartCoordY) <= 1  && f.Color == (Color) OldColor && !VisitedFields.Contains(f));
@@ -81,13 +114,6 @@ namespace Hexagonfield
                 ChangeColor(f.CoordX, f.CoordY, NewColor, OldColor);
             });
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeColor(-2, 2, Colors.Red);
-            VisitedFields = new List<Models.Field>();           
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             DrawCanvas.Children.Clear();
