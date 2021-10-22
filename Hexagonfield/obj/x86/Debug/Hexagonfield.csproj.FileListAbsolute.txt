@@ -10,7 +10,6 @@ C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\bin\x86\Debug\Core\Hexagon
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\bin\x86\Debug\Hexagonfield.build.appxrecipe
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\bin\x86\Debug\System.Runtime.dll
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\obj\x86\Debug\Hexagonfield.csprojAssemblyReference.cache
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\obj\x86\Debug\App.g.i.cs
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\obj\x86\Debug\App.g.cs
 C:\Users\Marci\source\repos\Hexagonfield\Hexagonfield\obj\x86\Debug\MainPage.g.i.cs
