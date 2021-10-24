@@ -31,26 +31,27 @@ namespace Hexagonfield
     {
         public int Width { get; set; } = 40;
         public int Height { get; set; } = 36;
-        public int Size { get; set; } = 5;
+        public int Size { get; set; } = 7;
         public List<Color> ColorList { get; set; } = new List<Color>() { Colors.Red, Colors.Blue, Colors.Green, Colors.Orange, Colors.Purple };
         public List<Field> Fields { get; set; } = new List<Field>();
         public List<Field> VisitedFields { get; set; } = new List<Field>();
         public List<Player> Players { get; set; } = new List<Player>();
-        Player p = new Player() { StartCoordX = 0, StartCoordY = 4, Color = Colors.AliceBlue };
-        RobotPlayer robot = new RobotPlayer() { StartCoordX = 0, StartCoordY = -4 , Color = Colors.Black};
+        Player p = new Player() { StartCoordX = 0, StartCoordY = 6, Color = Colors.AliceBlue };
+        RobotPlayer robot = new RobotPlayer() { StartCoordX = 0, StartCoordY = -6 , Color = Colors.Black};
         Dictionary<Color, HashSet<Field>> OneColorNeighbourFields = new Dictionary<Color, HashSet<Field>>();
         public MainPage()
         {
             this.InitializeComponent();
             
-            /*ApplicationView.PreferredLaunchViewSize = new Size(1.5*Size*Width + 100, (2*Size-1)*Height + 100 );
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;*/
+            //ApplicationView.PreferredLaunchViewSize = new Size(1.5*Size*Width + 100, (2*Size-1)*Height + 100 );
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
             CreateColorButtons();
             CreateHexagons();
 
-            Players.Add(new Player() { Name = "Koni", StartCoordX = 0, StartCoordY = 4, Color = Colors.AliceBlue });
-            Players.Add(new Player() { Name = "Robot", StartCoordX = 0, StartCoordY = -4, Color = Colors.Black });
+            Players.Add(new Player() { StartCoordX = 0, StartCoordY = 6, Color = Colors.AliceBlue });
+            Players.Add(new RobotPlayer() { StartCoordX = 0, StartCoordY = -6, Color = Colors.Black });
+
             Players.ForEach(p => FindFieldsOfPlayer(p).ForEach(f => f.Mark(p.Color)));
             
         }
@@ -196,7 +197,6 @@ namespace Hexagonfield
             Fields.Clear();
             CreateHexagons();
             Players.ForEach(p => FindFieldsOfPlayer(p).ForEach(f => f.Mark(p.Color)));
-
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Hexagonfield.Models
     public class Field
     {
         private bool isMarked = false;
-        public bool IsMarked
+        public bool IsMarked 
         {
             get
             {
