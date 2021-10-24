@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Hexagonfield.Services;
+using Microsoft.UI.Xaml.Media;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Foundation;
 using Windows.UI;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
@@ -20,8 +23,7 @@ namespace Hexagonfield.Models
             }
             set
             {
-                isMarked = value;                
-                
+                isMarked = value;
             }
         }
         private int coordX;
@@ -40,16 +42,18 @@ namespace Hexagonfield.Models
             set
             {
                 color = value;
-                Polygon.Fill = new SolidColorBrush(value);
+                Polygon.Fill = Coloring.CreateRadialGradientBrush(new Color[] { value });
             }
         }
-        public void Mark()
+        public void Mark(Color PlayerColor)
         {
             IsMarked = true;
+            Polygon.Fill = Coloring.CreateRadialGradientBrush(new Color[] { PlayerColor, Color });
+
         }
         public void UnMark()
         {
-            IsMarked = true;
-        }
+            IsMarked = false;
+        }        
     }
 }

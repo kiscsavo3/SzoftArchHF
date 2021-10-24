@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj": {}
+    "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj": {
+    "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj",
+        "projectUniqueName": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj",
         "projectName": "Hexagonfield",
-        "projectPath": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj",
-        "packagesPath": "C:\\Users\\Marci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\obj\\",
+        "projectPath": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj",
+        "packagesPath": "C:\\Users\\Koni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Koni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.17763"
@@ -40,6 +42,14 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
+            },
+            "Microsoft.Toolkit.Uwp.UI": {
+              "target": "Package",
+              "version": "[7.1.1, )"
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.7.0, )"
             }
           },
           "imports": [

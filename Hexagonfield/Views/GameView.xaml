@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Hexagonfield.ViewModels.GameView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hexagonfield.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="ColorPanel" Grid.Row="0" Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="Rectangle">
+                    <Setter Property="Margin" Value="10,10,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center">Your Turn:</TextBlock>
+        </StackPanel>
+        <Canvas x:Name="DrawCanvas" Grid.Row="1"></Canvas>
+        <Button Margin="10,0,0,0" Grid.Row="2" Grid.Column="0" Click="Button_Click_1">Újra</Button>
+    </Grid>
+</Page>

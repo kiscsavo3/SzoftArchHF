@@ -203,6 +203,51 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -509,6 +554,51 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -995,6 +1085,51 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -1484,6 +1619,51 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -1971,6 +2151,51 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -2455,6 +2680,51 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -2944,6 +3214,51 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -3428,6 +3743,51 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.Toolkit/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit.Uwp": "7.1.1"
+        },
+        "compile": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -4097,8 +4457,101 @@
         "runtime.json"
       ]
     },
+    "Microsoft.Toolkit/7.1.1": {
+      "sha512": "3Aw6RgGTaUAWW6otFXGItE08Q+Xnp+DNeKfZ28uObOgG+fYvrYpDgmoH1qUKoJopkXsYyUD6uz1JMDqsEj6Y7w==",
+      "type": "package",
+      "path": "microsoft.toolkit/7.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "lib/net5.0/Microsoft.Toolkit.dll",
+        "lib/net5.0/Microsoft.Toolkit.pdb",
+        "lib/net5.0/Microsoft.Toolkit.xml",
+        "lib/netstandard1.4/Microsoft.Toolkit.dll",
+        "lib/netstandard1.4/Microsoft.Toolkit.pdb",
+        "lib/netstandard1.4/Microsoft.Toolkit.xml",
+        "lib/netstandard2.0/Microsoft.Toolkit.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.xml",
+        "lib/netstandard2.1/Microsoft.Toolkit.dll",
+        "lib/netstandard2.1/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.1/Microsoft.Toolkit.xml",
+        "microsoft.toolkit.7.1.1.nupkg.sha512",
+        "microsoft.toolkit.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp/7.1.1": {
+      "sha512": "AI2N/GSzdcjWC6jSv9nYn4CzaD/UUtq/nQpT+Pm8Gw1Gi1c0LwsnM4isc5iJFgZN1mE3AVDdvYWKOz3+ORVJJw==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp/7.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.dll",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.pdb",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.pri",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.xml",
+        "microsoft.toolkit.uwp.7.1.1.nupkg.sha512",
+        "microsoft.toolkit.uwp.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.UI/7.1.1": {
+      "sha512": "nACuxtVQufBI2i4UIvUc4qyJX96R64VbuWEbEXWznpWWd0dzT/T3zJtcj8TLvQoSPO5lrZB8sZIeQDFtsm2QPw==",
+      "type": "package",
+      "path": "microsoft.toolkit.uwp.ui/7.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.pri",
+        "lib/uap10.0.17763/Microsoft.Toolkit.Uwp.UI.xml",
+        "microsoft.toolkit.uwp.ui.7.1.1.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.nuspec"
+      ]
+    },
+    "Microsoft.UI.Xaml/2.7.0": {
+      "sha512": "dB4im13tfmMgL/V3Ei+3kD2rUF+/lTxAmR4gjJ45l577eljHfdo/KUrxpq/3I1Vp6e5GCDG1evDaEGuDxypLMg==",
+      "type": "package",
+      "path": "microsoft.ui.xaml/2.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Common.targets",
+        "build/Microsoft.UI.Xaml.props",
+        "build/MicrosoftUIXamlVersion.props",
+        "build/native/Microsoft.UI.Xaml.targets",
+        "buildTransitive/Common.targets",
+        "buildTransitive/Microsoft.UI.Xaml.props",
+        "buildTransitive/MicrosoftUIXamlVersion.props",
+        "lib/uap10.0/Design/Microsoft.UI.Xaml.Design.dll",
+        "lib/uap10.0/Microsoft.UI.Xaml.pri",
+        "lib/uap10.0/Microsoft.UI.Xaml.winmd",
+        "lib/uap10.0/Microsoft.UI.Xaml.xml",
+        "lib/uap10.0/Microsoft.UI.Xaml/Themes/Generic.xaml",
+        "license.txt",
+        "microsoft.ui.xaml.2.7.0.nupkg.sha512",
+        "microsoft.ui.xaml.nuspec",
+        "readme.txt",
+        "tools/AppX/arm/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/arm64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x86/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
     "NETStandard.Library/2.0.3": {
-      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -8155,29 +8608,34 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "Microsoft.Toolkit.Uwp.UI >= 7.1.1",
+      "Microsoft.UI.Xaml >= 2.7.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marci\\.nuget\\packages\\": {},
+    "C:\\Users\\Koni\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj",
+      "projectUniqueName": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj",
       "projectName": "Hexagonfield",
-      "projectPath": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\Hexagonfield.csproj",
-      "packagesPath": "C:\\Users\\Marci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marci\\source\\repos\\Hexagonfield\\Hexagonfield\\obj\\",
+      "projectPath": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\Hexagonfield.csproj",
+      "packagesPath": "C:\\Users\\Koni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Koni\\source\\repos\\SzoftArchHF2\\Hexagonfield\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Koni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17763"
@@ -8198,6 +8656,14 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"
+          },
+          "Microsoft.Toolkit.Uwp.UI": {
+            "target": "Package",
+            "version": "[7.1.1, )"
+          },
+          "Microsoft.UI.Xaml": {
+            "target": "Package",
+            "version": "[2.7.0, )"
           }
         },
         "imports": [
